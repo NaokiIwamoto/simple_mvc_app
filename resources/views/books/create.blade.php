@@ -1,6 +1,7 @@
 @extends('master')
 
 @section('content')
+<a href="/books">Back</a>
 <div>
     <form action="{{ route('store') }}" method="POST">
         @csrf
