@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/books', 'BookController@index'); 
+Route::get('/books', 'BookController@index');
 //Open index page and echo index fanction from BookController
 
 Route::get('/book/create', 'BookController@create')->name('create');
@@ -20,11 +20,11 @@ Route::get('/book/create', 'BookController@create')->name('create');
 
 Route::post('book/store', 'BookController@store')->name('store');
 
-Route::get('book/{id}', 'BookController@show')->name('show'); 
+Route::get('book/{id}', 'BookController@show')->name('show');
 //{} mean to create variable for inside name
-    // {id} → $id
+// {id} → $id
 
-Route::get('book/{id}/edit', 'BookController@edit')->name('edit'); 
+Route::get('book/{id}/edit', 'BookController@edit')->name('edit');
 
 Route::post('book/{id}/update', 'BookController@update')->name('update');
 
