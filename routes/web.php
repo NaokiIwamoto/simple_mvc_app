@@ -28,4 +28,5 @@ Route::get('book/{id}/edit', 'BookController@edit')->name('edit');
 
 Route::post('book/{id}/update', 'BookController@update')->name('update');
 
-Route::post('book/delete', 'BookController@delete')->name('delete');
+Route::delete('book/delete', 'BookController@delete')->name('delete');
+//delete is same as post but it is litle different.
